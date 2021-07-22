@@ -1,1 +1,1 @@
-web: gunicorn directory.wsgi.py
+web: gunicorn directory.wsgi
