@@ -15,14 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from api.models import ListingResource
+# from api.models import ListingResource
 from . import views
 
-listing_resource = ListingResource()
+# listing_resource = ListingResource()
 
 urlpatterns = [
     path('', views.home, name='home'),
     path('admin/', admin.site.urls),
     path('listings/', include('listings.urls')),
-    path('api/', include(listing_resource.urls)),
+    # path('api/', include(listing_resource.urls)),
 ]
