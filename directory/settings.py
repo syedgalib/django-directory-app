@@ -28,7 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
-    'calm-bayou-02967.herokuapp.com'
+    'django-directory-app.herokuapp.com'
 ]
 
 
