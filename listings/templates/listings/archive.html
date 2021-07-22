@@ -1,0 +1,27 @@
+{% extends 'base.html' %} {% block content %}
+
+<div class="my-4">
+  <h2>Listings Archive</h2>
+  <table class="table table-bordered table-striped table-hover mt-4">
+    <thead class="table-light text-center">
+      <tr>
+        <th>Title</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      {% for listing in listings %}
+      <tr>
+        <td>
+          <a class="link-primary" href="{% url 'listings:single' listing.id %}">
+            {{ listing.title }}
+          </a>
+        </td>
+        <td>{{ listing.description }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% endblock %}
+</div>

@@ -1,0 +1,7 @@
+{
+    "python.pythonPath": "/Users/syedgalib/.local/share/virtualenvs/directory-sS1GdbNH",
+    "python.defaultInterpreterPath": "/Users/syedgalib/.local/share/virtualenvs/directory-sS1GdbNH",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.formatting.provider": "autopep8"
+}

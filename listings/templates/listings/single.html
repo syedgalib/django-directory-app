@@ -1,0 +1,18 @@
+{% extends 'base.html' %} {% block content %}
+
+<div class="my-4">
+  <h2>Single Listing</h2>
+
+  <div class="card mt-4" style="width: 18rem">
+    <div class="card-body">
+      <h5 class="card-title">
+        <a class="link-primary" href="{% url 'listings:single' listing.id %}">
+          {{ listing.title }}
+        </a>
+      </h5>
+      <p class="card-text">{{ listing.description }}</p>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
