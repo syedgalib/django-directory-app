@@ -14,7 +14,10 @@
       {% for listing in listings %}
       <tr>
         <td>
-          <a class="link-primary" href="{% url 'listings:single' listing.id %}">
+          <a
+            class="link-primary"
+            href="{% url 'listings:single' listing.slug %}"
+          >
             {{ listing.title }}
           </a>
         </td>

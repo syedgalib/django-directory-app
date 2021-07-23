@@ -11,7 +11,7 @@ def index(response):
 
 
 # Single Listing
-def single(response, listing_id):
-    listing = get_object_or_404(Listing, pk=listing_id)
- 
+def single(response, slug):
+    listing = get_object_or_404(Listing, slug=slug)
+
     return render(response, 'listings/single.html', {"listing": listing})

@@ -6,5 +6,5 @@ app_name = 'listings'
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('<int:listing_id>', views.single, name='single'),
+    path('<slug:slug>', views.single, name='single'),
 ]

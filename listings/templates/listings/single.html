@@ -6,7 +6,7 @@
   <div class="card mt-4" style="width: 18rem">
     <div class="card-body">
       <h5 class="card-title">
-        <a class="link-primary" href="{% url 'listings:single' listing.id %}">
+        <a class="link-primary" href="{% url 'listings:single' listing.slug %}">
           {{ listing.title }}
         </a>
       </h5>
