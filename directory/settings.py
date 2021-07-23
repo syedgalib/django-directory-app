@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'listings.apps.ListingsConfig',
+    'taxonomy.apps.TaxonomyConfig',
     'api.apps.ApiConfig',
 ]
 
